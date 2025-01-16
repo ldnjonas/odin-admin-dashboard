@@ -40,7 +40,7 @@ body{
 
 .right-side{
     display: grid;
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 1fr 0.4fr 7fr;
 }
 
 .header {
@@ -78,8 +78,13 @@ body{
 .main-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 2/4;
+    grid-row: 1/4;
     gap: 20px
+}
+
+.headings{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
 }
 
 /* page-styling */
