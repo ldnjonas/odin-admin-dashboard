@@ -60,7 +60,7 @@ body{
 
 .bottom-part{
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1.2fr;
 }
 
 .main-content{
@@ -174,4 +174,44 @@ button{
 
 .header{
     background-color: white;
+}
+
+.trending-avatar img{
+    width: 40px;
+    height:auto;
+    border-radius: 20px;
+}
+
+.top-header-avatar{
+    width: 38px;
+    border-radius: 20px;
+    height: auto;
+}
+
+.bottom-header-avatar{
+    width: 50px;
+    height:auto;
+    border-radius: 20px;
+}
+
+.trending ul li img{
+    display: inline;
+}
+
+.trending-avatar{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trending-avatar div{
+    display: grid;
+    grid-row: 1fr 1fr;
+}
+
+.trending-avatar div p{
+    margin:0;
+}
+
+.trending-avatar{
+    margin-bottom:20px;
 }
