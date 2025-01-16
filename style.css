@@ -50,7 +50,7 @@ body{
 
 .header .top-part-header ul{
     display: grid;
-    grid-template-columns: 5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 0.5fr 5fr 0.5fr 0.5fr 0.5fr;
 }
 
 .header .bottom-part-header ul{
@@ -142,6 +142,23 @@ li{
     padding-right: 20px;   
 }
 
+.bell-icon{
+    width: 25px;
+}
+
+.searchbar{
+    background-color: #e2e8f0;
+    height: 50%;
+    border-radius: 10px;
+
+
+    
+}
+
+.search-icon{
+    width: 25px;
+}
+
 .display-card{
     background-color: white;
     border-radius: 10px;
@@ -216,4 +233,9 @@ button{
 
 .trending-avatar{
     margin-bottom:20px;
+}
+
+
+.action-icons {
+    align-items: end;
 }
