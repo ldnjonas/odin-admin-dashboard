@@ -50,7 +50,7 @@ body{
 
 .header .top-part-header ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 5fr 0.5fr 0.5fr 0.5fr;
 }
 
 .header .bottom-part-header ul{
@@ -85,6 +85,17 @@ body{
 .headings{
     display:grid;
     grid-template-columns: 5fr 1fr;
+}
+
+.display-card{
+    display:grid;
+    grid-template-rows: 0.5fr 3fr 1fr ;
+}
+
+.action-icons{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75px;
 }
 
 /* page-styling */
