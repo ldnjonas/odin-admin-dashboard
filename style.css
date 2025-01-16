@@ -145,6 +145,8 @@ li{
 .display-card{
     background-color: white;
     border-radius: 10px;
+    
+    border-left: 8px solid orange;
 }
 
 .trending{
