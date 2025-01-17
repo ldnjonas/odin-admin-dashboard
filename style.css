@@ -3,11 +3,19 @@
     src:  url('/Users/jonasreinhard/repos/odin-admin-dashboard/assets/fonts/Roboto.ttf') format('ttf'),
 }
 
+body{
+    margin:0;
+}
+
+*{
+    font-family: Roboto;
+}
+
 /* page-layout */
 
 body{
     display:grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebar, .sidebar ul{
@@ -40,7 +48,9 @@ body{
 
 .right-side{
     display: grid;
-    grid-template-rows: 1fr 0.4fr 7fr;
+    grid-template-rows: 0.5fr 0.4fr 3fr;
+    /* grid-template-rows: 1fr 0.8fr 6fr; */
+    /* grid-template-rows: 1fr 0.4fr 7fr; */
 }
 
 .header {
@@ -60,7 +70,7 @@ body{
 
 .bottom-part{
     display: grid;
-    grid-template-columns: 4fr 1.2fr;
+    grid-template-columns: 4fr 1.5fr;
 }
 
 .main-content{
@@ -69,6 +79,7 @@ body{
 
 .announcements{
     grid-column: 2 / 3;
+    
 }
 
 .trending{
@@ -78,8 +89,7 @@ body{
 .main-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1/4;
-    gap: 20px
+    gap: 20px;
 }
 
 .headings{
@@ -96,6 +106,15 @@ body{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 75px;
+}
+
+.trending-heading{
+    grid-column: 2/3;
+}
+
+.side-content{
+    display: grid;
+    grid-template-rows: 3fr 0.5fr 2.5fr;
 }
 
 /* page-styling */
@@ -162,8 +181,13 @@ li{
 .display-card{
     background-color: white;
     border-radius: 10px;
-    
     border-left: 8px solid orange;
+    
+    min-height:150px;
+    max-height:250px;
+    min-width:250px;
+    max-width:350px;
+    
 }
 
 .trending{
@@ -237,5 +261,36 @@ button{
 
 
 .action-icons {
-    align-items: end;
+    align-items: center;
+    gap:20px;
+    height: auto;
+    width: 100px;
+}
+
+.main-content{
+    align-items: center;
+    justify-items: center;
+}
+
+.main-content .display-card{
+    padding-left: 20px;
+}
+
+.main-content .display-card h5{
+    margin-bottom: 5px;
+}
+
+.main-content .display-card p{
+    margin-top: 0px;
+}
+
+.main-content .display-card .action-icons{
+    position: relative;
+    bottom: 20%;
+    left: min(50%);
+    left: max(55%);
+}
+
+.side-content{
+    padding-right:20px;
 }
